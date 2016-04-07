@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="libs/tomcat/annotations-api.jar"/>
+	<classpathentry kind="lib" path="libs/tomcat/catalina-ant.jar"/>
+	<classpathentry kind="lib" path="libs/tomcat/catalina-ha.jar"/>
+	<classpathentry kind="lib" path="libs/tomcat/catalina-storeconfig.jar"/>
+	<classpathentry kind="lib" path="libs/tomcat/catalina-tribes.jar"/>
+	<classpathentry kind="lib" path="libs/tomcat/catalina.jar"/>
+	<classpathentry kind="lib" path="libs/tomcat/ecj-4.5.jar"/>
+	<classpathentry kind="lib" path="libs/tomcat/el-api.jar"/>
+	<classpathentry kind="lib" path="libs/tomcat/jasper-el.jar"/>
+	<classpathentry kind="lib" path="libs/tomcat/jasper.jar"/>
+	<classpathentry kind="lib" path="libs/tomcat/jaspic-api.jar"/>
+	<classpathentry kind="lib" path="libs/tomcat/jsp-api.jar"/>
+	<classpathentry kind="lib" path="libs/tomcat/servlet-api.jar"/>
+	<classpathentry kind="lib" path="libs/tomcat/tomcat-api.jar"/>
+	<classpathentry kind="lib" path="libs/tomcat/tomcat-coyote.jar"/>
+	<classpathentry kind="lib" path="libs/tomcat/tomcat-dbcp.jar"/>
+	<classpathentry kind="lib" path="libs/tomcat/tomcat-i18n-es.jar"/>
+	<classpathentry kind="lib" path="libs/tomcat/tomcat-i18n-fr.jar"/>
+	<classpathentry kind="lib" path="libs/tomcat/tomcat-i18n-ja.jar"/>
+	<classpathentry kind="lib" path="libs/tomcat/tomcat-jdbc.jar"/>
+	<classpathentry kind="lib" path="libs/tomcat/tomcat-jni.jar"/>
+	<classpathentry kind="lib" path="libs/tomcat/tomcat-util-scan.jar"/>
+	<classpathentry kind="lib" path="libs/tomcat/tomcat-util.jar"/>
+	<classpathentry kind="lib" path="libs/tomcat/tomcat-websocket.jar"/>
+	<classpathentry kind="lib" path="libs/tomcat/websocket-api.jar"/>
+	<classpathentry kind="lib" path="libs/apache/commons-pool2-2.4.2.jar"/>
+	<classpathentry kind="lib" path="libs/mysql-connector-java-5.1.37-bin.jar"/>
+	<classpathentry kind="output" path="web/WEB-INF/classes"/>
+</classpath>
