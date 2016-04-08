@@ -51,3 +51,4 @@ mysql --default-character-set=utf8 -u dky -pdky123 DkyDb < /pathTo/dky.sql
 9. Use Chrome browser to visit: http://localhost:8080/yhis/main?cmd=showHome
 
 If everything is OK you will see the login page for the system. Enter ydgh001 / 123456 to signin the system.
+2016.04.08
