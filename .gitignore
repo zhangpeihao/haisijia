@@ -1,5 +1,7 @@
 *.class
 
+/d/abiz/projects/java/haisijia/work/tomcat/
+
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 
