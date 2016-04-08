@@ -162,7 +162,7 @@ function fillMarriageStateList(json) {
 * 【闫涛 2016.03.11】初始版本
 */
 function addPatient() {
-	alert("添加随访计划成功！");
+	alert("添加随访记录结果成功！");
 	window.location.href = "main?cmd=showFollowupPlans&stmId=12&ssmId=13&stmId=12&ssmId=13";
 }
 function onAddPatientOk(json) {

@@ -3,7 +3,7 @@
 		<div class="row">
 			<div class="col-md-12">
 				<!-- BOX -->
-				<div class="box border blue">
+				<div class="box border blue" style="background-color: white;">
 					<div class="box-title">
 						<h4><i class="fa fa-table"></i>随访计划</h4>
 						<div class="tools">
@@ -40,9 +40,76 @@
 							</div>																																
 						</form>
 					</div>
-					<!-- 查询框结束 -->		
+					<!-- 查询框结束 -->	
+					
+					<div class="row" style="width: 101%; padding-left: 15px;">
 					<!-- 患者列表开始 -->
-					<div class="box-body">
+					<div class="col-md-1 box-body">
+					
+					
+						<table class="" style="font-size: 4px;">
+							<tbody>
+								<tr>
+									<td>A区</td>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td>A区</td>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td>A区</td>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td>A区</td>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td>A区</td>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td>A区</td>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td>A区</td>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td>A区</td>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td>A区</td>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td>A区</td>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td>A区</td>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td>A区</td>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td>A区</td>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td>A区</td>
+									<td><span>李长发</span></td>
+								</tr>
+							</tbody>
+						</table>
+					
+					</div>
+					<div class="col-md-11 box-body">
 						<table style="border: 1px blue solid; width: 100%;">
 							<tr style="border: 0px blue solid;">
 								<td style="border: 0px blue solid;">&nbsp;</td>
@@ -86,6 +153,11 @@
 								<td style="border: 1px blue solid;">周六</td>
 								<td style="border: 1px blue solid;">周日</td>
 							</tr>
+<style>
+.patientNameInScheduleTable {
+	font-size: 5px;
+}
+</style>
 							<tr style="border: 0px blue solid;">
 								<td style="border: 1px blue solid;">于都A区1</td>
 								<td style="border: 1px blue solid;">A001+</td>
@@ -93,19 +165,19 @@
 									<table style="width: 100%; color: white;">
 										<tr style="background-color: red;">
 											<td id="td1">
-												<span id="user1">张三</span>
+												<span id="user1" class="patientNameInScheduleTable">张三二一</span>&nbsp;
 												<i id="icon1" class="fa fa-times"></i>
 											</td>
 										</tr>
 										<tr style="background-color: green;">
 											<td id="td1">
-												<span id="user1">李四</span>
+												<span id="user1" class="patientNameInScheduleTable">李四</span>&nbsp;
 												<i id="icon1" class="fa fa-times"></i>
 											</td>
 										</tr>
 										<tr style="background-color: blue;">
 											<td id="td1">
-												<span id="user1">赵五</span>
+												<span id="user1" class="patientNameInScheduleTable">赵五</span>&nbsp;
 												<i id="icon1" class="fa fa-times"></i>
 											</td>
 										</tr>
@@ -113,93 +185,288 @@
 								</td>
 								<td style="border: 1px blue solid;">
 									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
+										<tr style="background-color: red;">
+											<td id="td1">
+												<span id="user10" class="patientNameInScheduleTable">张三测</span>&nbsp;
+												<i id="icon10" class="fa fa-times"></i>
+											</td>
+										</tr>
+										<tr style="background-color: green;">
+											<td id="td1">
+												<span id="user1" class="patientNameInScheduleTable">李四</span>&nbsp;
+												<i id="icon1" class="fa fa-times"></i>
+											</td>
+										</tr>
+										<tr style="background-color: blue;">
+											<td id="td1">
+												<span id="user1" class="patientNameInScheduleTable">赵五</span>&nbsp;
+												<i id="icon1" class="fa fa-times"></i>
+											</td>
+										</tr>
 									</table>
 								</td>
 								<td style="border: 1px blue solid;">
 									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
+										<tr style="background-color: red;">
+											<td id="td1">
+												<span id="user10" class="patientNameInScheduleTable">张三测</span>&nbsp;
+												<i id="icon10" class="fa fa-times"></i>
+											</td>
+										</tr>
+										<tr style="background-color: green;">
+											<td id="td1">
+												<span id="user1" class="patientNameInScheduleTable">李四</span>&nbsp;
+												<i id="icon1" class="fa fa-times"></i>
+											</td>
+										</tr>
+										<tr style="background-color: blue;">
+											<td id="td1">
+												<span id="user1" class="patientNameInScheduleTable">赵五</span>&nbsp;
+												<i id="icon1" class="fa fa-times"></i>
+											</td>
+										</tr>
 									</table>
 								</td>
 								<td style="border: 1px blue solid;">
 									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
+										<tr style="background-color: red;">
+											<td id="td1">
+												<span id="user10" class="patientNameInScheduleTable">张三测</span>&nbsp;
+												<i id="icon10" class="fa fa-times"></i>
+											</td>
+										</tr>
+										<tr style="background-color: green;">
+											<td id="td1">
+												<span id="user1" class="patientNameInScheduleTable">李四</span>&nbsp;
+												<i id="icon1" class="fa fa-times"></i>
+											</td>
+										</tr>
+										<tr style="background-color: blue;">
+											<td id="td1">
+												<span id="user1" class="patientNameInScheduleTable">赵五</span>&nbsp;
+												<i id="icon1" class="fa fa-times"></i>
+											</td>
+										</tr>
 									</table>
 								</td>
 								<td style="border: 1px blue solid;">
 									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
+										<tr style="background-color: red;">
+											<td id="td1">
+												<span id="user10" class="patientNameInScheduleTable">张三测</span>&nbsp;
+												<i id="icon10" class="fa fa-times"></i>
+											</td>
+										</tr>
+										<tr style="background-color: green;">
+											<td id="td1">
+												<span id="user1" class="patientNameInScheduleTable">李四</span>&nbsp;
+												<i id="icon1" class="fa fa-times"></i>
+											</td>
+										</tr>
+										<tr style="background-color: blue;">
+											<td id="td1">
+												<span id="user1" class="patientNameInScheduleTable">赵五</span>&nbsp;
+												<i id="icon1" class="fa fa-times"></i>
+											</td>
+										</tr>
 									</table>
 								</td>
 								<td style="border: 1px blue solid;">
 									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
+										<tr style="background-color: red;">
+											<td id="td1">
+												<span id="user10" class="patientNameInScheduleTable">张三测</span>&nbsp;
+												<i id="icon10" class="fa fa-times"></i>
+											</td>
+										</tr>
+										<tr style="background-color: green;">
+											<td id="td1">
+												<span id="user1" class="patientNameInScheduleTable">李四</span>&nbsp;
+												<i id="icon1" class="fa fa-times"></i>
+											</td>
+										</tr>
+										<tr style="background-color: blue;">
+											<td id="td1">
+												<span id="user1" class="patientNameInScheduleTable">赵五</span>&nbsp;
+												<i id="icon1" class="fa fa-times"></i>
+											</td>
+										</tr>
 									</table>
 								</td>
 								<td style="border: 1px blue solid;">
 									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
+										<tr style="background-color: red;">
+											<td id="td1">
+												<span id="user10" class="patientNameInScheduleTable">张三测</span>&nbsp;
+												<i id="icon10" class="fa fa-times"></i>
+											</td>
+										</tr>
+										<tr style="background-color: green;">
+											<td id="td1">
+												<span id="user1" class="patientNameInScheduleTable">李四</span>&nbsp;
+												<i id="icon1" class="fa fa-times"></i>
+											</td>
+										</tr>
+										<tr style="background-color: blue;">
+											<td id="td1">
+												<span id="user1" class="patientNameInScheduleTable">赵五</span>&nbsp;
+												<i id="icon1" class="fa fa-times"></i>
+											</td>
+										</tr>
 									</table>
 								</td>
 								<td style="border: 1px blue solid;">
 									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
+										<tr style="background-color: red;">
+											<td id="td1">
+												<span id="user10" class="patientNameInScheduleTable">张三测</span>&nbsp;
+												<i id="icon10" class="fa fa-times"></i>
+											</td>
+										</tr>
+										<tr style="background-color: green;">
+											<td id="td1">
+												<span id="user1" class="patientNameInScheduleTable">李四</span>&nbsp;
+												<i id="icon1" class="fa fa-times"></i>
+											</td>
+										</tr>
+										<tr style="background-color: blue;">
+											<td id="td1">
+												<span id="user1" class="patientNameInScheduleTable">赵五</span>&nbsp;
+												<i id="icon1" class="fa fa-times"></i>
+											</td>
+										</tr>
 									</table>
 								</td>
 								<td style="border: 1px blue solid;">
 									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
+										<tr style="background-color: red;">
+											<td id="td1">
+												<span id="user10" class="patientNameInScheduleTable">张三测</span>&nbsp;
+												<i id="icon10" class="fa fa-times"></i>
+											</td>
+										</tr>
+										<tr style="background-color: green;">
+											<td id="td1">
+												<span id="user1" class="patientNameInScheduleTable">李四</span>&nbsp;
+												<i id="icon1" class="fa fa-times"></i>
+											</td>
+										</tr>
+										<tr style="background-color: blue;">
+											<td id="td1">
+												<span id="user1" class="patientNameInScheduleTable">赵五</span>&nbsp;
+												<i id="icon1" class="fa fa-times"></i>
+											</td>
+										</tr>
 									</table>
 								</td>
 								<td style="border: 1px blue solid;">
 									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
+										<tr style="background-color: red;">
+											<td id="td1">
+												<span id="user10" class="patientNameInScheduleTable">张三测</span>&nbsp;
+												<i id="icon10" class="fa fa-times"></i>
+											</td>
+										</tr>
+										<tr style="background-color: green;">
+											<td id="td1">
+												<span id="user1" class="patientNameInScheduleTable">李四</span>&nbsp;
+												<i id="icon1" class="fa fa-times"></i>
+											</td>
+										</tr>
+										<tr style="background-color: blue;">
+											<td id="td1">
+												<span id="user1" class="patientNameInScheduleTable">赵五</span>&nbsp;
+												<i id="icon1" class="fa fa-times"></i>
+											</td>
+										</tr>
 									</table>
 								</td>
 								<td style="border: 1px blue solid;">
 									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
+										<tr style="background-color: red;">
+											<td id="td1">
+												<span id="user10" class="patientNameInScheduleTable">张三测</span>&nbsp;
+												<i id="icon10" class="fa fa-times"></i>
+											</td>
+										</tr>
+										<tr style="background-color: green;">
+											<td id="td1">
+												<span id="user1" class="patientNameInScheduleTable">李四</span>&nbsp;
+												<i id="icon1" class="fa fa-times"></i>
+											</td>
+										</tr>
+										<tr style="background-color: blue;">
+											<td id="td1">
+												<span id="user1" class="patientNameInScheduleTable">赵五</span>&nbsp;
+												<i id="icon1" class="fa fa-times"></i>
+											</td>
+										</tr>
 									</table>
 								</td>
 								<td style="border: 1px blue solid;">
 									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
+										<tr style="background-color: red;">
+											<td id="td1">
+												<span id="user10" class="patientNameInScheduleTable">张三测</span>&nbsp;
+												<i id="icon10" class="fa fa-times"></i>
+											</td>
+										</tr>
+										<tr style="background-color: green;">
+											<td id="td1">
+												<span id="user1" class="patientNameInScheduleTable">李四</span>&nbsp;
+												<i id="icon1" class="fa fa-times"></i>
+											</td>
+										</tr>
+										<tr style="background-color: blue;">
+											<td id="td1">
+												<span id="user1" class="patientNameInScheduleTable">赵五</span>&nbsp;
+												<i id="icon1" class="fa fa-times"></i>
+											</td>
+										</tr>
 									</table>
 								</td>
 								<td style="border: 1px blue solid;">
 									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
+										<tr style="background-color: red;">
+											<td id="td1">
+												<span id="user10" class="patientNameInScheduleTable">张三测</span>&nbsp;
+												<i id="icon10" class="fa fa-times"></i>
+											</td>
+										</tr>
+										<tr style="background-color: green;">
+											<td id="td1">
+												<span id="user1" class="patientNameInScheduleTable">李四</span>&nbsp;
+												<i id="icon1" class="fa fa-times"></i>
+											</td>
+										</tr>
+										<tr style="background-color: blue;">
+											<td id="td1">
+												<span id="user1" class="patientNameInScheduleTable">赵五</span>&nbsp;
+												<i id="icon1" class="fa fa-times"></i>
+											</td>
+										</tr>
 									</table>
 								</td>
 								<td style="border: 1px blue solid;">
 									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
+										<tr style="background-color: red;">
+											<td id="td1">
+												<span id="user10" class="patientNameInScheduleTable">张三测</span>&nbsp;
+												<i id="icon10" class="fa fa-times"></i>
+											</td>
+										</tr>
+										<tr style="background-color: green;">
+											<td id="td1">
+												<span id="user1" class="patientNameInScheduleTable">李四</span>&nbsp;
+												<i id="icon1" class="fa fa-times"></i>
+											</td>
+										</tr>
+										<tr style="background-color: blue;">
+											<td id="td1">
+												<span id="user1" class="patientNameInScheduleTable">赵五</span>&nbsp;
+												<i id="icon1" class="fa fa-times"></i>
+											</td>
+										</tr>
 									</table>
 								</td>
 							</tr>
@@ -210,202 +477,115 @@
 								<td style="border: 1px blue solid;">A001+</td>
 								<td style="border: 1px blue solid;">
 									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
+										<tr style="background-color: red;">
+											<td id="td1">
+												<span id="user10" class="patientNameInScheduleTable">张三</span>&nbsp;
+												<i id="icon10" class="fa fa-times"></i>
+											</td>
+										</tr>
+										<tr style="background-color: green;">
+											<td id="td1">
+												<span id="user1" class="patientNameInScheduleTable">李四</span>&nbsp;
+												<i id="icon1" class="fa fa-times"></i>
+											</td>
+										</tr>
+										<tr style="background-color: blue;">
+											<td id="td1">
+												<span id="user1" class="patientNameInScheduleTable">赵五</span>&nbsp;
+												<i id="icon1" class="fa fa-times"></i>
+											</td>
+										</tr>
 									</table>
 								</td>
 								<td style="border: 1px blue solid;">
 									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
 									</table>
 								</td>
 								<td style="border: 1px blue solid;">
 									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
 									</table>
 								</td>
 								<td style="border: 1px blue solid;">
 									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
 									</table>
 								</td>
 								<td style="border: 1px blue solid;">
 									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
 									</table>
 								</td>
 								<td style="border: 1px blue solid;">
 									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
 									</table>
 								</td>
 								<td style="border: 1px blue solid;">
 									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
 									</table>
 								</td>
 								<td style="border: 1px blue solid;">
 									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
 									</table>
 								</td>
 								<td style="border: 1px blue solid;">
 									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
 									</table>
 								</td>
 								<td style="border: 1px blue solid;">
 									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
 									</table>
 								</td>
 								<td style="border: 1px blue solid;">
 									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
 									</table>
 								</td>
 								<td style="border: 1px blue solid;">
 									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
 									</table>
 								</td>
 								<td style="border: 1px blue solid;">
 									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
 									</table>
 								</td>
 								<td style="border: 1px blue solid;">
 									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
-									</table>
-								</td>
-							</tr>
-							<tr style="border: 0px blue solid;">
-								<td style="border: 1px blue solid;">于都A区1</td>
-								<td style="border: 1px blue solid;">A001+</td>
-								<td style="border: 1px blue solid;">
-									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
-									</table>
-								</td>
-								<td style="border: 1px blue solid;">
-									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
-									</table>
-								</td>
-								<td style="border: 1px blue solid;">
-									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
-									</table>
-								</td>
-								<td style="border: 1px blue solid;">
-									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
-									</table>
-								</td>
-								<td style="border: 1px blue solid;">
-									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
-									</table>
-								</td>
-								<td style="border: 1px blue solid;">
-									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
-									</table>
-								</td>
-								<td style="border: 1px blue solid;">
-									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
-									</table>
-								</td>
-								<td style="border: 1px blue solid;">
-									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
-									</table>
-								</td>
-								<td style="border: 1px blue solid;">
-									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
-									</table>
-								</td>
-								<td style="border: 1px blue solid;">
-									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
-									</table>
-								</td>
-								<td style="border: 1px blue solid;">
-									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
-									</table>
-								</td>
-								<td style="border: 1px blue solid;">
-									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
-									</table>
-								</td>
-								<td style="border: 1px blue solid;">
-									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
-									</table>
-								</td>
-								<td style="border: 1px blue solid;">
-									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
 									</table>
 								</td>
 							</tr>
@@ -414,202 +594,100 @@
 								<td style="border: 1px blue solid;">A001+</td>
 								<td style="border: 1px blue solid;">
 									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
 									</table>
 								</td>
 								<td style="border: 1px blue solid;">
 									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
 									</table>
 								</td>
 								<td style="border: 1px blue solid;">
 									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
 									</table>
 								</td>
 								<td style="border: 1px blue solid;">
 									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
 									</table>
 								</td>
 								<td style="border: 1px blue solid;">
 									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
 									</table>
 								</td>
 								<td style="border: 1px blue solid;">
 									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
 									</table>
 								</td>
 								<td style="border: 1px blue solid;">
 									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
 									</table>
 								</td>
 								<td style="border: 1px blue solid;">
 									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
 									</table>
 								</td>
 								<td style="border: 1px blue solid;">
 									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
 									</table>
 								</td>
 								<td style="border: 1px blue solid;">
 									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
 									</table>
 								</td>
 								<td style="border: 1px blue solid;">
 									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
 									</table>
 								</td>
 								<td style="border: 1px blue solid;">
 									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
 									</table>
 								</td>
 								<td style="border: 1px blue solid;">
 									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
 									</table>
 								</td>
 								<td style="border: 1px blue solid;">
 									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
-									</table>
-								</td>
-							</tr>
-							<tr style="border: 0px blue solid;">
-								<td style="border: 1px blue solid;">于都A区1</td>
-								<td style="border: 1px blue solid;">A001+</td>
-								<td style="border: 1px blue solid;">
-									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
-									</table>
-								</td>
-								<td style="border: 1px blue solid;">
-									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
-									</table>
-								</td>
-								<td style="border: 1px blue solid;">
-									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
-									</table>
-								</td>
-								<td style="border: 1px blue solid;">
-									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
-									</table>
-								</td>
-								<td style="border: 1px blue solid;">
-									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
-									</table>
-								</td>
-								<td style="border: 1px blue solid;">
-									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
-									</table>
-								</td>
-								<td style="border: 1px blue solid;">
-									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
-									</table>
-								</td>
-								<td style="border: 1px blue solid;">
-									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
-									</table>
-								</td>
-								<td style="border: 1px blue solid;">
-									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
-									</table>
-								</td>
-								<td style="border: 1px blue solid;">
-									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
-									</table>
-								</td>
-								<td style="border: 1px blue solid;">
-									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
-									</table>
-								</td>
-								<td style="border: 1px blue solid;">
-									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
-									</table>
-								</td>
-								<td style="border: 1px blue solid;">
-									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
-									</table>
-								</td>
-								<td style="border: 1px blue solid;">
-									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
 									</table>
 								</td>
 							</tr>
@@ -618,202 +696,100 @@
 								<td style="border: 1px blue solid;">A001+</td>
 								<td style="border: 1px blue solid;">
 									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
 									</table>
 								</td>
 								<td style="border: 1px blue solid;">
 									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
 									</table>
 								</td>
 								<td style="border: 1px blue solid;">
 									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
 									</table>
 								</td>
 								<td style="border: 1px blue solid;">
 									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
 									</table>
 								</td>
 								<td style="border: 1px blue solid;">
 									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
 									</table>
 								</td>
 								<td style="border: 1px blue solid;">
 									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
 									</table>
 								</td>
 								<td style="border: 1px blue solid;">
 									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
 									</table>
 								</td>
 								<td style="border: 1px blue solid;">
 									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
 									</table>
 								</td>
 								<td style="border: 1px blue solid;">
 									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
 									</table>
 								</td>
 								<td style="border: 1px blue solid;">
 									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
 									</table>
 								</td>
 								<td style="border: 1px blue solid;">
 									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
 									</table>
 								</td>
 								<td style="border: 1px blue solid;">
 									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
 									</table>
 								</td>
 								<td style="border: 1px blue solid;">
 									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
 									</table>
 								</td>
 								<td style="border: 1px blue solid;">
 									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
-									</table>
-								</td>
-							</tr>
-							<tr style="border: 0px blue solid;">
-								<td style="border: 1px blue solid;">于都A区1</td>
-								<td style="border: 1px blue solid;">A001+</td>
-								<td style="border: 1px blue solid;">
-									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
-									</table>
-								</td>
-								<td style="border: 1px blue solid;">
-									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
-									</table>
-								</td>
-								<td style="border: 1px blue solid;">
-									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
-									</table>
-								</td>
-								<td style="border: 1px blue solid;">
-									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
-									</table>
-								</td>
-								<td style="border: 1px blue solid;">
-									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
-									</table>
-								</td>
-								<td style="border: 1px blue solid;">
-									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
-									</table>
-								</td>
-								<td style="border: 1px blue solid;">
-									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
-									</table>
-								</td>
-								<td style="border: 1px blue solid;">
-									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
-									</table>
-								</td>
-								<td style="border: 1px blue solid;">
-									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
-									</table>
-								</td>
-								<td style="border: 1px blue solid;">
-									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
-									</table>
-								</td>
-								<td style="border: 1px blue solid;">
-									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
-									</table>
-								</td>
-								<td style="border: 1px blue solid;">
-									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
-									</table>
-								</td>
-								<td style="border: 1px blue solid;">
-									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
-									</table>
-								</td>
-								<td style="border: 1px blue solid;">
-									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
 									</table>
 								</td>
 							</tr>
@@ -822,100 +798,100 @@
 								<td style="border: 1px blue solid;">A001+</td>
 								<td style="border: 1px blue solid;">
 									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
 									</table>
 								</td>
 								<td style="border: 1px blue solid;">
 									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
 									</table>
 								</td>
 								<td style="border: 1px blue solid;">
 									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
 									</table>
 								</td>
 								<td style="border: 1px blue solid;">
 									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
 									</table>
 								</td>
 								<td style="border: 1px blue solid;">
 									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
 									</table>
 								</td>
 								<td style="border: 1px blue solid;">
 									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
 									</table>
 								</td>
 								<td style="border: 1px blue solid;">
 									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
 									</table>
 								</td>
 								<td style="border: 1px blue solid;">
 									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
 									</table>
 								</td>
 								<td style="border: 1px blue solid;">
 									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
 									</table>
 								</td>
 								<td style="border: 1px blue solid;">
 									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
 									</table>
 								</td>
 								<td style="border: 1px blue solid;">
 									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
 									</table>
 								</td>
 								<td style="border: 1px blue solid;">
 									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
 									</table>
 								</td>
 								<td style="border: 1px blue solid;">
 									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
 									</table>
 								</td>
 								<td style="border: 1px blue solid;">
 									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
 									</table>
 								</td>
 							</tr>
@@ -924,100 +900,406 @@
 								<td style="border: 1px blue solid;">A001+</td>
 								<td style="border: 1px blue solid;">
 									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
 									</table>
 								</td>
 								<td style="border: 1px blue solid;">
 									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
 									</table>
 								</td>
 								<td style="border: 1px blue solid;">
 									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
 									</table>
 								</td>
 								<td style="border: 1px blue solid;">
 									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
 									</table>
 								</td>
 								<td style="border: 1px blue solid;">
 									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
 									</table>
 								</td>
 								<td style="border: 1px blue solid;">
 									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
 									</table>
 								</td>
 								<td style="border: 1px blue solid;">
 									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
 									</table>
 								</td>
 								<td style="border: 1px blue solid;">
 									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
 									</table>
 								</td>
 								<td style="border: 1px blue solid;">
 									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
 									</table>
 								</td>
 								<td style="border: 1px blue solid;">
 									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
 									</table>
 								</td>
 								<td style="border: 1px blue solid;">
 									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
 									</table>
 								</td>
 								<td style="border: 1px blue solid;">
 									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
 									</table>
 								</td>
 								<td style="border: 1px blue solid;">
 									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
 									</table>
 								</td>
 								<td style="border: 1px blue solid;">
 									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>张三</td></tr>
-										<tr style="background-color: green;"><td>李四</td></tr>
-										<tr style="background-color: blue;"><td>赵五</td></tr>
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+							</tr>
+							<tr style="border: 0px blue solid;">
+								<td style="border: 1px blue solid;">于都A区1</td>
+								<td style="border: 1px blue solid;">A001+</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+							</tr>
+							<tr style="border: 0px blue solid;">
+								<td style="border: 1px blue solid;">于都A区1</td>
+								<td style="border: 1px blue solid;">A001+</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+							</tr>
+							<tr style="border: 0px blue solid;">
+								<td style="border: 1px blue solid;">于都A区1</td>
+								<td style="border: 1px blue solid;">A001+</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
 									</table>
 								</td>
 							</tr>
@@ -1030,6 +1312,9 @@
 						</table>
 					</div>
 					<!-- 列表结束 -->
+					</div>
+					
+					
 				</div>
 				<!-- /BOX -->
 			</div>
