@@ -1,5 +1,5 @@
 # haisijia
-A HIS+ platform base on Java8
+A HIS+ platform base on Java8. It has some important features such as functional programming, StreamAPI, Optional sematics. It aims to build a modern code base for HIS development.
 Set up the development environment
 1. Download the files
 2. Startup mysql
