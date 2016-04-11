@@ -160,6 +160,20 @@
 												<div class="panel panel-default">
 													<div class="panel-body">
 														<div class="tabbable  tabs-below">
+														
+								
+										<input type="text" id="patientName" style="font-size: 5px; width: 80px;" placeholder="患者查询" />										
+												<select id="patientQueryResult" size="5" style="width: 80px; display: none;">
+													<option value="1">张三</option>
+													<option value="2">李四</option>
+													<option value="3">赵五</option>
+													<option value="4">李四</option>
+													<option value="5">赵五</option>
+													<option value="6">李四</option>
+													<option value="7">赵五</option>
+												</select>
+												<span id="selectedPatient" draggable="true" ondragstart="drag(event)">&nbsp;</span><br /><br />
+														
 															<ul class="nav nav-tabs">
 																<li class="active" style="font-size: 18px;"><a href="#" data-toggle="tab"><i class="fa fa-bullhorn"></i>A区</a></li>
 																<li><a href="#tab_2_2" data-toggle="tab">李东1</a></li>
@@ -431,7 +445,19 @@ $(document).ready(function () {
 	insertAfter();
 	insertAfter();
 	insertAfter();
+	$("#patientName").bind("focus", showPatientQueryResult);
+	//$("#patientName").bind("blur", hidePatientQueryResult);
+	$("#patientQueryResult").bind("click", hidePatientQueryResult);
 });
+
+
+function showPatientQueryResult() {
+	$("#patientQueryResult").css("display", "block");
+}
+
+function hidePatientQueryResult() {
+	$("#patientQueryResult").css("display", "none");
+}
 
 function selectRow() {
 	$("#daItemsTable .table-select").removeClass("table-select");
