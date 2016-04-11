@@ -29,11 +29,9 @@
 										</tr>
 									</table>			
 								</div>
-								<div class="col-md-6" style="text-align: right;">									
-									<button type="button" class="btn btn-primary">上一周</button>&nbsp;
-									<button type="button" class="btn btn-primary">当前</button>&nbsp;
-									<button type="button" class="btn btn-primary">下一周</button>&nbsp;
-									<button type="button" class="btn btn-primary">复制一周</button>&nbsp;
+								<div class="col-md-6" style="text-align: right;">			
+									<button type="button" class="btn btn-primary">复制单周</button>&nbsp;
+									<button type="button" class="btn btn-primary">复制双周</button>&nbsp;
 									<button type="button" class="btn btn-primary">复制两周</button>&nbsp;
 									<button type="button" class="btn btn-primary">打印</button>&nbsp;
 								</div>
@@ -47,62 +45,336 @@
 					<div class="col-md-1 box-body">
 					
 					
-						<table class="" style="font-size: 4px;">
+						<table class="" style="font-size: 5px;">
 							<tbody>
 								<tr>
-									<td>A区</td>
+									<td>
+										<input type="text" id="patientName" style="font-size: 5px; width: 80px;" placeholder="患者查询" />										
+												<select id="patientQueryResult" size="5" style="width: 80px; display: none;">
+													<option value="1">张三</option>
+													<option value="2">李四</option>
+													<option value="3">赵五</option>
+													<option value="4">李四</option>
+													<option value="5">赵五</option>
+													<option value="6">李四</option>
+													<option value="7">赵五</option>
+												</select>
+												<span id="selectedPatient" draggable="true" ondragstart="drag(event)">&nbsp;</span>
+									</td>
+								</tr>
+								<tr>
+									<td><b>A区</b></td>
+								</tr>
+								<tr>
+									<td><span draggable="true" ondragstart="drag(event)">李长发</span></td>
+								</tr>
+								<tr>
 									<td><span>李长发</span></td>
 								</tr>
 								<tr>
-									<td>A区</td>
 									<td><span>李长发</span></td>
 								</tr>
 								<tr>
-									<td>A区</td>
 									<td><span>李长发</span></td>
 								</tr>
 								<tr>
-									<td>A区</td>
 									<td><span>李长发</span></td>
 								</tr>
 								<tr>
-									<td>A区</td>
+									<td><span>B区</span></td>
+								</tr>
+								<tr>
 									<td><span>李长发</span></td>
 								</tr>
 								<tr>
-									<td>A区</td>
 									<td><span>李长发</span></td>
 								</tr>
 								<tr>
-									<td>A区</td>
 									<td><span>李长发</span></td>
 								</tr>
 								<tr>
-									<td>A区</td>
 									<td><span>李长发</span></td>
 								</tr>
 								<tr>
-									<td>A区</td>
 									<td><span>李长发</span></td>
 								</tr>
 								<tr>
-									<td>A区</td>
+									<td>C区</td>
+								</tr>
+								<tr>
 									<td><span>李长发</span></td>
 								</tr>
 								<tr>
-									<td>A区</td>
 									<td><span>李长发</span></td>
 								</tr>
 								<tr>
-									<td>A区</td>
 									<td><span>李长发</span></td>
 								</tr>
 								<tr>
-									<td>A区</td>
 									<td><span>李长发</span></td>
 								</tr>
 								<tr>
-									<td>A区</td>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
 									<td><span>李长发</span></td>
 								</tr>
 							</tbody>
@@ -114,30 +386,12 @@
 							<tr style="border: 0px blue solid;">
 								<td style="border: 0px blue solid;">&nbsp;</td>
 								<td style="border: 0px blue solid;">&nbsp;</td>
-								<td style="border: 1px blue solid; text-align: center;" colSpan="7">第14周</td>
-								<td style="border: 1px blue solid; text-align: center;" colSpan="7">第15周</td>
+								<td style="border: 1px blue solid; text-align: center;" colSpan="7">单周</td>
+								<td style="border: 1px blue solid; text-align: center;" colSpan="7">双周</td>
 							</tr>
 							<tr style="border: 0px blue solid;">
 								<td style="border: 0px blue solid;">区域</td>
 								<td style="border: 0px blue solid;">设备</td>
-								<td style="border: 1px blue solid;">04-04</td>
-								<td style="border: 1px blue solid;">04-05</td>
-								<td style="border: 1px blue solid;">04-06</td>
-								<td style="border: 1px blue solid;">04-07</td>
-								<td style="border: 1px blue solid;">04-08</td>
-								<td style="border: 1px blue solid;">04-09</td>
-								<td style="border: 1px blue solid;">04-10</td>
-								<td style="border: 1px blue solid;">04-11</td>
-								<td style="border: 1px blue solid;">04-12</td>
-								<td style="border: 1px blue solid;">04-13</td>
-								<td style="border: 1px blue solid;">04-14</td>
-								<td style="border: 1px blue solid;">04-15</td>
-								<td style="border: 1px blue solid;">04-16</td>
-								<td style="border: 1px blue solid;">04-17</td>
-							</tr>
-							<tr style="border: 0px blue solid;">
-								<td style="border: 0px blue solid;">&nbsp;</td>
-								<td style="border: 0px blue solid;">&nbsp;</td>
 								<td style="border: 1px blue solid;">周一</td>
 								<td style="border: 1px blue solid;">周二</td>
 								<td style="border: 1px blue solid;">周三</td>
@@ -499,9 +753,9 @@
 								</td>
 								<td style="border: 1px blue solid;">
 									<table style="width: 100%; color: white;">
-										<tr style="background-color: red;"><td>&nbsp;</td></tr>
-										<tr style="background-color: green;"><td>&nbsp;</td></tr>
-										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+										<tr style="background-color: red;"><td  ondrop="drop(event)" ondragover="allowDrop(event)">&nbsp;</td></tr>
+										<tr style="background-color: green;"><td  ondrop="drop(event)" ondragover="allowDrop(event)">&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td  ondrop="drop(event)" ondragover="allowDrop(event)">&nbsp;</td></tr>
 									</table>
 								</td>
 								<td style="border: 1px blue solid;">
@@ -1329,6 +1583,9 @@ $(document).ready(function () {
 	$("#pp_1").bind("click", showFollowupPlanPatients);
 	$("#user1").bind("click", choosePatient);
 	$("#icon1").bind("click", cancelSchedule);
+	$("#patientName").bind("focus", showPatientQueryResult);
+	//$("#patientName").bind("blur", hidePatientQueryResult);
+	$("#patientQueryResult").bind("click", hidePatientQueryResult);
 });
 
 function addFollowupPlan() {
@@ -1352,5 +1609,30 @@ function cancelSchedule() {
 	$("#td1").bind("click", choosePatient);
 	g_debug = 0;
 }
+
+function showPatientQueryResult() {
+	$("#patientQueryResult").css("display", "block");
+}
+
+function hidePatientQueryResult() {
+	$("#patientQueryResult").css("display", "none");
+	$("#selectedPatient").text("患者" + $("#patientQueryResult").val());
+}
+
+function allowDrop(ev){
+	ev.preventDefault();
+}
+function drag(ev){
+    ev.dataTransfer.setData("Text",ev.target.innerHTML);
+}
+function drop(ev){
+	console.log("step 1");
+	ev.preventDefault();
+	console.log("step 2");
+    var data=ev.dataTransfer.getData("Text");
+    var str = '<span class="patientNameInScheduleTable" >'+data+'</span>&nbsp;<i class="fa fa-times" id="icon10"></i></span>';
+    ev.target.innerHTML =str;
+}
+
 </script>
                     

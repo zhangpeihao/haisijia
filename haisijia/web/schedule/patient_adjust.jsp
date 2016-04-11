@@ -3,12 +3,12 @@
 		<div class="row">
 			<div class="col-md-12">
 				<!-- BOX -->
-				<div class="box border blue">
+				<div class="box border blue" style="background-color: white;">
 					<div class="box-title">
-						<h4><i class="fa fa-table"></i>随访患者维护</h4>
+						<h4><i class="fa fa-table"></i>随访计划</h4>
 						<div class="tools">
-							<a id="addFollowupPatientBtn" href="#box-config" data-toggle="modal" class="config">
-								<i class="fa fa-cog">添加</i>
+							<a id="addFollowupPlanBtn" href="#box-config" data-toggle="modal" class="config">
+								<i class="fa fa-cog">保存</i>
 							</a>
 						</div>
 					</div> 	
@@ -16,283 +16,1574 @@
 					<div class="box-body">
 						 <form class="form-horizontal " action="#">
 							<div class="form-group">
-								<label class="col-md-2 control-label">姓名</label>
-								<div class="col-md-4">
-									<input class="form-control" type="text" name="jcName" size="10" id="jcName">
+								<div class="col-md-6">		
+									图例：
+									<table style="background-color: white;">
+										<tr>
+											<td style="width: 30px; height: 10px; background-color: red;">&nbsp;</td>
+											<td style="width: 50px;">上午</td>
+											<td style="width: 30px; height: 10px; background-color: green;">&nbsp;</td>
+											<td style="width: 50px;">下午</td>
+											<td style="width: 30px; height: 10px; background-color: blue;">&nbsp;</td>
+											<td style="width: 50px;">晚上</td>
+										</tr>
+									</table>			
 								</div>
-								<label class="col-md-2 control-label">&nbsp;</label>
-								<div class="col-md-4">
-									<button type="button" class="btn btn-primary">查询</button>
+								<div class="col-md-6" style="text-align: right;">			
+									<button type="button" class="btn btn-primary">打印</button>&nbsp;
 								</div>
-							</div>																							
+							</div>																																
 						</form>
 					</div>
-					<!-- 查询框结束 -->
+					<!-- 查询框结束 -->	
+					
+					<div class="row" style="width: 101%; padding-left: 15px;">
 					<!-- 患者列表开始 -->
-					<div class="box-body">
-						<table class="table table-bordered table-striped">
-							<thead>
-								<tr>
-									<th>#</th>
-									<th>姓名</th>
-									<th>性别</th>
-									<th>年龄</th>
-									<th>教育程度</th>
-									<th>职业</th>
-									<th>收入</th>
-									<th>手机</th>
-									<th>邮件</th>
-									<th>标签</th>
-									<th>入院</th>
-									<th>删除</th>
-								</tr>
-							</thead>
+					<div class="col-md-1 box-body">
+					
+					
+						<table class="" style="font-size: 5px;">
 							<tbody>
 								<tr>
-									<td>1</td>
-									<td><a href="main?cmd=showSchedulePatientAdjustDetail&stmId=15&ssmId=21">赵一</a></td>
-									<td>男</td>
-									<td>55</td>
-									<td>小学</td>
-									<td>司机</td>
-									<td>5000~10000</td>
-									<td>13912340000</td>
-									<td>zs@abc.com</td>
-									<td style="text-align: center;">
-										<a id="p_1" href="javascript:;" class="remove">
-											<i class="fa fa-info-circle"></i>
-											<div id="p_tag_1" class="popover fade left in" style="top: 120px; left: 700px; display: none;">
-												<div class="arrow"></div>
-												<h3 class="popover-title">赵一的标签</h3>
-												<div class="popover-content">
-													<button class="btn btn-xs btn-primary">老年</button>
-													<button class="btn btn-xs btn-primary">低收入</button>
-													<button class="btn btn-xs btn-primary">体力劳动</button>
-													<button class="btn btn-xs btn-primary">IgA肾病</button>
-													<button class="btn btn-xs btn-primary">CKD四期</button>
-													<button class="btn btn-xs btn-primary">腹膜透析</button>
-													<button class="btn btn-xs btn-primary">血管通路</button>
-												</div>
-											</div>
-										</a>
-									</td>
-									<td style="text-align: center;">
-										<a id="rd_1" href="javascript:;" class="remove">
-											<i class="fa fa-plus-square"></i>
-										</a>
-									</td>
-									<td style="text-align: center;">
-										<a id="pd_1" href="javascript:;" class="remove">
-											<i class="fa fa-times"></i>
-										</a>
-									</td>
-								</tr>	
-								<tr>
-									<td>2</td>
-									<td><a href="#">钱二</a></td>
-									<td>男</td>
-									<td>55</td>
-									<td>小学</td>
-									<td>司机</td>
-									<td>5000~10000</td>
-									<td>13912340000</td>
-									<td>zs@abc.com</td>
-									<td style="text-align: center;">
-										<a id="jc1" href="javascript:;" class="remove">
-											<i class="fa fa-info-circle"></i>
-										</a>
-									</td>
-									<td style="text-align: center;">
-										<a id="rd_2" href="javascript:;" class="remove">
-											<i class="fa fa-plus-square"></i>
-										</a>
-									</td>
-									<td style="text-align: center;">
-										<a id="jc1" href="javascript:;" class="remove">
-											<i class="fa fa-times"></i>
-										</a>
-									</td>
-								</tr>	
-								<tr>
-									<td>3</td>
-									<td><a href="#">孙三</a></td>
-									<td>男</td>
-									<td>55</td>
-									<td>小学</td>
-									<td>司机</td>
-									<td>5000~10000</td>
-									<td>13912340000</td>
-									<td>zs@abc.com</td>
-									<td style="text-align: center;">
-										<a id="jc1" href="javascript:;" class="remove">
-											<i class="fa fa-info-circle"></i>
-										</a>
-									</td>
-									<td style="text-align: center;">
-										<a id="rd_3" href="javascript:;" class="remove">
-											<i class="fa fa-plus-square"></i>
-										</a>
-									</td>
-									<td style="text-align: center;">
-										<a id="jc1" href="javascript:;" class="remove">
-											<i class="fa fa-times"></i>
-										</a>
-									</td>
-								</tr>	
-								<tr>
-									<td>4</td>
-									<td><a href="#">李四</a></td>
-									<td>男</td>
-									<td>55</td>
-									<td>小学</td>
-									<td>司机</td>
-									<td>5000~10000</td>
-									<td>13912340000</td>
-									<td>zs@abc.com</td>
-									<td style="text-align: center;">
-										<a id="jc1" href="javascript:;" class="remove">
-											<i class="fa fa-info-circle"></i>
-										</a>
-									</td>
-									<td style="text-align: center;">
-										<a id="rd_4" href="javascript:;" class="remove">
-											<i class="fa fa-plus-square"></i>
-										</a>
-									</td>
-									<td style="text-align: center;">
-										<a id="jc1" href="javascript:;" class="remove">
-											<i class="fa fa-times"></i>
-										</a>
+									<td>
+										<input type="text" id="patientName" style="font-size: 5px; width: 80px;" placeholder="患者查询" />										
+												<select id="patientQueryResult" size="5" style="width: 80px; display: none;">
+													<option value="1">张三</option>
+													<option value="2">李四</option>
+													<option value="3">赵五</option>
+													<option value="4">李四</option>
+													<option value="5">赵五</option>
+													<option value="6">李四</option>
+													<option value="7">赵五</option>
+												</select>
+												<span id="selectedPatient" draggable="true" ondragstart="drag(event)">&nbsp;</span>
 									</td>
 								</tr>
 								<tr>
-									<td>5</td>
-									<td><a href="#">周五</a></td>
-									<td>男</td>
-									<td>55</td>
-									<td>小学</td>
-									<td>司机</td>
-									<td>5000~10000</td>
-									<td>13912340000</td>
-									<td>zs@abc.com</td>
-									<td style="text-align: center;">
-										<a id="jc1" href="javascript:;" class="remove">
-											<i class="fa fa-info-circle"></i>
-										</a>
-									</td>
-									<td style="text-align: center;">
-										<a id="rd_5" href="javascript:;" class="remove">
-											<i class="fa fa-plus-square"></i>
-										</a>
-									</td>
-									<td style="text-align: center;">
-										<a id="jc1" href="javascript:;" class="remove">
-											<i class="fa fa-times"></i>
-										</a>
-									</td>
-								</tr>	
-								<tr>
-									<td>6</td>
-									<td><a href="#">武六</a></td>
-									<td>男</td>
-									<td>55</td>
-									<td>小学</td>
-									<td>司机</td>
-									<td>5000~10000</td>
-									<td>13912340000</td>
-									<td>zs@abc.com</td>
-									<td style="text-align: center;">
-										<a id="jc1" href="javascript:;" class="remove">
-											<i class="fa fa-info-circle"></i>
-										</a>
-									</td>
-									<td style="text-align: center;">
-										<a id="rd_6" href="javascript:;" class="remove">
-											<i class="fa fa-plus-square"></i>
-										</a>
-									</td>
-									<td style="text-align: center;">
-										<a id="jc1" href="javascript:;" class="remove">
-											<i class="fa fa-times"></i>
-										</a>
-									</td>
+									<td><b>A区</b></td>
 								</tr>
 								<tr>
-									<td>7</td>
-									<td><a href="#">郑七</a></td>
-									<td>男</td>
-									<td>55</td>
-									<td>小学</td>
-									<td>司机</td>
-									<td>5000~10000</td>
-									<td>13912340000</td>
-									<td>zs@abc.com</td>
-									<td style="text-align: center;">
-										<a id="jc1" href="javascript:;" class="remove">
-											<i class="fa fa-info-circle"></i>
-										</a>
-									</td>
-									<td style="text-align: center;">
-										<a id="rd_7" href="javascript:;" class="remove">
-											<i class="fa fa-plus-square"></i>
-										</a>
-									</td>
-									<td style="text-align: center;">
-										<a id="jc1" href="javascript:;" class="remove">
-											<i class="fa fa-times"></i>
-										</a>
-									</td>
+									<td><span draggable="true" ondragstart="drag(event)">李长发</span></td>
 								</tr>
 								<tr>
-									<td>8</td>
-									<td><a href="#">王八</a></td>
-									<td>男</td>
-									<td>55</td>
-									<td>小学</td>
-									<td>司机</td>
-									<td>5000~10000</td>
-									<td>13912340000</td>
-									<td>zs@abc.com</td>
-									<td style="text-align: center;">
-										<a id="p_8" href="javascript:;" class="remove">
-											<i class="fa fa-info-circle"></i>
-										</a>
-									</td>
-									<td style="text-align: center;">
-										<a id="rd_8" href="javascript:;" class="remove">
-											<i class="fa fa-plus-square"></i>
-										</a>
-									</td>
-									<td style="text-align: center;">
-										<a id="jc1" href="javascript:;" class="remove">
-											<i class="fa fa-times"></i>
-										</a>
-									</td>
-								</tr>				
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>B区</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td>C区</td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
+								<tr>
+									<td><span>李长发</span></td>
+								</tr>
 							</tbody>
 						</table>
-
-						
-						
-						
-					<table style="width: 100%; text-align: right;">
-					<tr><td>
-					<ul class="pagination">
-					<li><a href="#">共*条记录，共*页第*页</a></li>
-					<li><a href="#">««</a></li>
-					<li><a href="#">«</a></li>
-					<li><a href="#">1</a></li>
-					<li><a href="#">2</a></li>
-					<li><a href="#">3</a></li>
-					<li class="active"><a href="#">4</a></li>
-					<li><a href="#">5</a></li>
-					<li><a href="#">»</a></li>
-					<li><a href="#">»»</a></li>
-					</ul>
-					</td></tr>
-					</table>
+					
 					</div>
-					<!-- 患者列表结束 -->
+					<div class="col-md-11 box-body">
+						<table style="border: 1px blue solid; width: 100%;">
+							<tr style="border: 0px blue solid;">
+								<td style="border: 0px blue solid;">&nbsp;</td>
+								<td style="border: 0px blue solid;">&nbsp;</td>
+								<td style="border: 1px blue solid; text-align: center;" colSpan="7">单周</td>
+								<td style="border: 1px blue solid; text-align: center;" colSpan="7">双周</td>
+							</tr>
+							<tr style="border: 0px blue solid;">
+								<td style="border: 0px blue solid;">区域</td>
+								<td style="border: 0px blue solid;">设备</td>
+								<td style="border: 1px blue solid;">04-04</td>
+								<td style="border: 1px blue solid;">04-05</td>
+								<td style="border: 1px blue solid;">04-06</td>
+								<td style="border: 1px blue solid;">04-07</td>
+								<td style="border: 1px blue solid;">04-08</td>
+								<td style="border: 1px blue solid;">04-09</td>
+								<td style="border: 1px blue solid;">04-10</td>
+								<td style="border: 1px blue solid;">04-11</td>
+								<td style="border: 1px blue solid;">04-12</td>
+								<td style="border: 1px blue solid;">04-13</td>
+								<td style="border: 1px blue solid;">04-14</td>
+								<td style="border: 1px blue solid;">04-15</td>
+								<td style="border: 1px blue solid;">04-16</td>
+								<td style="border: 1px blue solid;">04-17</td>
+							</tr>
+							<tr style="border: 0px blue solid;">
+								<td style="border: 0px blue solid;">&nbsp;</td>
+								<td style="border: 0px blue solid;">&nbsp;</td>
+								<td style="border: 1px blue solid;">周一</td>
+								<td style="border: 1px blue solid;">周二</td>
+								<td style="border: 1px blue solid;">周三</td>
+								<td style="border: 1px blue solid;">周四</td>
+								<td style="border: 1px blue solid;">周五</td>
+								<td style="border: 1px blue solid;">周六</td>
+								<td style="border: 1px blue solid;">周日</td>
+								<td style="border: 1px blue solid;">周一</td>
+								<td style="border: 1px blue solid;">周二</td>
+								<td style="border: 1px blue solid;">周三</td>
+								<td style="border: 1px blue solid;">周四</td>
+								<td style="border: 1px blue solid;">周五</td>
+								<td style="border: 1px blue solid;">周六</td>
+								<td style="border: 1px blue solid;">周日</td>
+							</tr>
+<style>
+.patientNameInScheduleTable {
+	font-size: 5px;
+}
+</style>
+							<tr style="border: 0px blue solid;">
+								<td style="border: 1px blue solid;">于都A区1</td>
+								<td style="border: 1px blue solid;">A001+</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;">
+											<td id="td1">
+												<span id="user1" class="patientNameInScheduleTable">张三二一</span>&nbsp;
+												<i id="icon1" class="fa fa-times"></i>
+											</td>
+										</tr>
+										<tr style="background-color: green;">
+											<td id="td1">
+												<span id="user1" class="patientNameInScheduleTable">李四</span>&nbsp;
+												<i id="icon1" class="fa fa-times"></i>
+											</td>
+										</tr>
+										<tr style="background-color: blue;">
+											<td id="td1">
+												<span id="user1" class="patientNameInScheduleTable">赵五</span>&nbsp;
+												<i id="icon1" class="fa fa-times"></i>
+											</td>
+										</tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;">
+											<td id="td1">
+												<span id="user10" class="patientNameInScheduleTable">张三测</span>&nbsp;
+												<i id="icon10" class="fa fa-times"></i>
+											</td>
+										</tr>
+										<tr style="background-color: green;">
+											<td id="td1">
+												<span id="user1" class="patientNameInScheduleTable">李四</span>&nbsp;
+												<i id="icon1" class="fa fa-times"></i>
+											</td>
+										</tr>
+										<tr style="background-color: blue;">
+											<td id="td1">
+												<span id="user1" class="patientNameInScheduleTable">赵五</span>&nbsp;
+												<i id="icon1" class="fa fa-times"></i>
+											</td>
+										</tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;">
+											<td id="td1">
+												<span id="user10" class="patientNameInScheduleTable">张三测</span>&nbsp;
+												<i id="icon10" class="fa fa-times"></i>
+											</td>
+										</tr>
+										<tr style="background-color: green;">
+											<td id="td1">
+												<span id="user1" class="patientNameInScheduleTable">李四</span>&nbsp;
+												<i id="icon1" class="fa fa-times"></i>
+											</td>
+										</tr>
+										<tr style="background-color: blue;">
+											<td id="td1">
+												<span id="user1" class="patientNameInScheduleTable">赵五</span>&nbsp;
+												<i id="icon1" class="fa fa-times"></i>
+											</td>
+										</tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;">
+											<td id="td1">
+												<span id="user10" class="patientNameInScheduleTable">张三测</span>&nbsp;
+												<i id="icon10" class="fa fa-times"></i>
+											</td>
+										</tr>
+										<tr style="background-color: green;">
+											<td id="td1">
+												<span id="user1" class="patientNameInScheduleTable">李四</span>&nbsp;
+												<i id="icon1" class="fa fa-times"></i>
+											</td>
+										</tr>
+										<tr style="background-color: blue;">
+											<td id="td1">
+												<span id="user1" class="patientNameInScheduleTable">赵五</span>&nbsp;
+												<i id="icon1" class="fa fa-times"></i>
+											</td>
+										</tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;">
+											<td id="td1">
+												<span id="user10" class="patientNameInScheduleTable">张三测</span>&nbsp;
+												<i id="icon10" class="fa fa-times"></i>
+											</td>
+										</tr>
+										<tr style="background-color: green;">
+											<td id="td1">
+												<span id="user1" class="patientNameInScheduleTable">李四</span>&nbsp;
+												<i id="icon1" class="fa fa-times"></i>
+											</td>
+										</tr>
+										<tr style="background-color: blue;">
+											<td id="td1">
+												<span id="user1" class="patientNameInScheduleTable">赵五</span>&nbsp;
+												<i id="icon1" class="fa fa-times"></i>
+											</td>
+										</tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;">
+											<td id="td1">
+												<span id="user10" class="patientNameInScheduleTable">张三测</span>&nbsp;
+												<i id="icon10" class="fa fa-times"></i>
+											</td>
+										</tr>
+										<tr style="background-color: green;">
+											<td id="td1">
+												<span id="user1" class="patientNameInScheduleTable">李四</span>&nbsp;
+												<i id="icon1" class="fa fa-times"></i>
+											</td>
+										</tr>
+										<tr style="background-color: blue;">
+											<td id="td1">
+												<span id="user1" class="patientNameInScheduleTable">赵五</span>&nbsp;
+												<i id="icon1" class="fa fa-times"></i>
+											</td>
+										</tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;">
+											<td id="td1">
+												<span id="user10" class="patientNameInScheduleTable">张三测</span>&nbsp;
+												<i id="icon10" class="fa fa-times"></i>
+											</td>
+										</tr>
+										<tr style="background-color: green;">
+											<td id="td1">
+												<span id="user1" class="patientNameInScheduleTable">李四</span>&nbsp;
+												<i id="icon1" class="fa fa-times"></i>
+											</td>
+										</tr>
+										<tr style="background-color: blue;">
+											<td id="td1">
+												<span id="user1" class="patientNameInScheduleTable">赵五</span>&nbsp;
+												<i id="icon1" class="fa fa-times"></i>
+											</td>
+										</tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;">
+											<td id="td1">
+												<span id="user10" class="patientNameInScheduleTable">张三测</span>&nbsp;
+												<i id="icon10" class="fa fa-times"></i>
+											</td>
+										</tr>
+										<tr style="background-color: green;">
+											<td id="td1">
+												<span id="user1" class="patientNameInScheduleTable">李四</span>&nbsp;
+												<i id="icon1" class="fa fa-times"></i>
+											</td>
+										</tr>
+										<tr style="background-color: blue;">
+											<td id="td1">
+												<span id="user1" class="patientNameInScheduleTable">赵五</span>&nbsp;
+												<i id="icon1" class="fa fa-times"></i>
+											</td>
+										</tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;">
+											<td id="td1">
+												<span id="user10" class="patientNameInScheduleTable">张三测</span>&nbsp;
+												<i id="icon10" class="fa fa-times"></i>
+											</td>
+										</tr>
+										<tr style="background-color: green;">
+											<td id="td1">
+												<span id="user1" class="patientNameInScheduleTable">李四</span>&nbsp;
+												<i id="icon1" class="fa fa-times"></i>
+											</td>
+										</tr>
+										<tr style="background-color: blue;">
+											<td id="td1">
+												<span id="user1" class="patientNameInScheduleTable">赵五</span>&nbsp;
+												<i id="icon1" class="fa fa-times"></i>
+											</td>
+										</tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;">
+											<td id="td1">
+												<span id="user10" class="patientNameInScheduleTable">张三测</span>&nbsp;
+												<i id="icon10" class="fa fa-times"></i>
+											</td>
+										</tr>
+										<tr style="background-color: green;">
+											<td id="td1">
+												<span id="user1" class="patientNameInScheduleTable">李四</span>&nbsp;
+												<i id="icon1" class="fa fa-times"></i>
+											</td>
+										</tr>
+										<tr style="background-color: blue;">
+											<td id="td1">
+												<span id="user1" class="patientNameInScheduleTable">赵五</span>&nbsp;
+												<i id="icon1" class="fa fa-times"></i>
+											</td>
+										</tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;">
+											<td id="td1">
+												<span id="user10" class="patientNameInScheduleTable">张三测</span>&nbsp;
+												<i id="icon10" class="fa fa-times"></i>
+											</td>
+										</tr>
+										<tr style="background-color: green;">
+											<td id="td1">
+												<span id="user1" class="patientNameInScheduleTable">李四</span>&nbsp;
+												<i id="icon1" class="fa fa-times"></i>
+											</td>
+										</tr>
+										<tr style="background-color: blue;">
+											<td id="td1">
+												<span id="user1" class="patientNameInScheduleTable">赵五</span>&nbsp;
+												<i id="icon1" class="fa fa-times"></i>
+											</td>
+										</tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;">
+											<td id="td1">
+												<span id="user10" class="patientNameInScheduleTable">张三测</span>&nbsp;
+												<i id="icon10" class="fa fa-times"></i>
+											</td>
+										</tr>
+										<tr style="background-color: green;">
+											<td id="td1">
+												<span id="user1" class="patientNameInScheduleTable">李四</span>&nbsp;
+												<i id="icon1" class="fa fa-times"></i>
+											</td>
+										</tr>
+										<tr style="background-color: blue;">
+											<td id="td1">
+												<span id="user1" class="patientNameInScheduleTable">赵五</span>&nbsp;
+												<i id="icon1" class="fa fa-times"></i>
+											</td>
+										</tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;">
+											<td id="td1">
+												<span id="user10" class="patientNameInScheduleTable">张三测</span>&nbsp;
+												<i id="icon10" class="fa fa-times"></i>
+											</td>
+										</tr>
+										<tr style="background-color: green;">
+											<td id="td1">
+												<span id="user1" class="patientNameInScheduleTable">李四</span>&nbsp;
+												<i id="icon1" class="fa fa-times"></i>
+											</td>
+										</tr>
+										<tr style="background-color: blue;">
+											<td id="td1">
+												<span id="user1" class="patientNameInScheduleTable">赵五</span>&nbsp;
+												<i id="icon1" class="fa fa-times"></i>
+											</td>
+										</tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;">
+											<td id="td1">
+												<span id="user10" class="patientNameInScheduleTable">张三测</span>&nbsp;
+												<i id="icon10" class="fa fa-times"></i>
+											</td>
+										</tr>
+										<tr style="background-color: green;">
+											<td id="td1">
+												<span id="user1" class="patientNameInScheduleTable">李四</span>&nbsp;
+												<i id="icon1" class="fa fa-times"></i>
+											</td>
+										</tr>
+										<tr style="background-color: blue;">
+											<td id="td1">
+												<span id="user1" class="patientNameInScheduleTable">赵五</span>&nbsp;
+												<i id="icon1" class="fa fa-times"></i>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						
+						
+							<tr style="border: 0px blue solid;">
+								<td style="border: 1px blue solid;">于都A区1</td>
+								<td style="border: 1px blue solid;">A001+</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;">
+											<td id="td1">
+												<span id="user10" class="patientNameInScheduleTable">张三</span>&nbsp;
+												<i id="icon10" class="fa fa-times"></i>
+											</td>
+										</tr>
+										<tr style="background-color: green;">
+											<td id="td1">
+												<span id="user1" class="patientNameInScheduleTable">李四</span>&nbsp;
+												<i id="icon1" class="fa fa-times"></i>
+											</td>
+										</tr>
+										<tr style="background-color: blue;">
+											<td id="td1">
+												<span id="user1" class="patientNameInScheduleTable">赵五</span>&nbsp;
+												<i id="icon1" class="fa fa-times"></i>
+											</td>
+										</tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td  ondrop="drop(event)" ondragover="allowDrop(event)">&nbsp;</td></tr>
+										<tr style="background-color: green;"><td  ondrop="drop(event)" ondragover="allowDrop(event)">&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td  ondrop="drop(event)" ondragover="allowDrop(event)">&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+							</tr>
+							<tr style="border: 0px blue solid;">
+								<td style="border: 1px blue solid;">于都A区1</td>
+								<td style="border: 1px blue solid;">A001+</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+							</tr>
+							<tr style="border: 0px blue solid;">
+								<td style="border: 1px blue solid;">于都A区1</td>
+								<td style="border: 1px blue solid;">A001+</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+							</tr>
+							<tr style="border: 0px blue solid;">
+								<td style="border: 1px blue solid;">于都A区1</td>
+								<td style="border: 1px blue solid;">A001+</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+							</tr>
+							<tr style="border: 0px blue solid;">
+								<td style="border: 1px blue solid;">于都A区1</td>
+								<td style="border: 1px blue solid;">A001+</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+							</tr>
+							<tr style="border: 0px blue solid;">
+								<td style="border: 1px blue solid;">于都A区1</td>
+								<td style="border: 1px blue solid;">A001+</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+							</tr>
+							<tr style="border: 0px blue solid;">
+								<td style="border: 1px blue solid;">于都A区1</td>
+								<td style="border: 1px blue solid;">A001+</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+							</tr>
+							<tr style="border: 0px blue solid;">
+								<td style="border: 1px blue solid;">于都A区1</td>
+								<td style="border: 1px blue solid;">A001+</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border: 1px blue solid;">
+									<table style="width: 100%; color: white;">
+										<tr style="background-color: red;"><td>&nbsp;</td></tr>
+										<tr style="background-color: green;"><td>&nbsp;</td></tr>
+										<tr style="background-color: blue;"><td>&nbsp;</td></tr>
+									</table>
+								</td>
+							</tr>
+						
+						
+						
+						
+						
+						
+						</table>
+					</div>
+					<!-- 列表结束 -->
+					</div>
+					
+					
 				</div>
 				<!-- /BOX -->
 			</div>
@@ -301,32 +1592,60 @@
 </div>
 
 <script type="text/javascript">
+var g_debug = 1;
 $(document).ready(function () {
-	$("#p_1").bind("mouseover", showTags);
-	$("#p_1").bind("mouseout", hideTags);
-	$("#pd_1").bind("click", deletePatient);
-	$("#rd_1").bind("click", enrollPatient);
-	$("#addFollowupPatientBtn").bind("click", showAddFollowupPatient);
+	$("#addFollowupPlanBtn").bind("click", addFollowupPlan);
+	$("#pp_1").bind("click", showFollowupPlanPatients);
+	$("#user1").bind("click", choosePatient);
+	$("#icon1").bind("click", cancelSchedule);
+	$("#patientName").bind("focus", showPatientQueryResult);
+	//$("#patientName").bind("blur", hidePatientQueryResult);
+	$("#patientQueryResult").bind("click", hidePatientQueryResult);
 });
 
-function showTags() {
-	$("#p_tag_1").css("display", "block");
+function addFollowupPlan() {
+	window.location.href = 'main?cmd=showSchedulePatientTemplate&stmId=15&ssmId=20';
 }
 
-function hideTags() {
-	$("#p_tag_1").css("display", "none");
+function showFollowupPlanPatients() {
+	window.location.href = "main?cmd=showFollowupPlanPatients&stmId=12&ssmId=13&stmId=12&ssmId=13";
 }
 
-function deletePatient() {
-	confirm("您确定要删除这个患者吗？");
+function choosePatient() {
+	if (0 == g_debug) {
+		g_debug = 1;
+		return ;
+	}
+	window.location.href = "main?cmd=showSchedulePatientChoosePatient&stmId=15&ssmId=20";
 }
 
-function showAddFollowupPatient() {
-	window.location.href = "main?cmd=showFollowupPatientNew&stmId=1&ssmId=55&stmId=1";
+function cancelSchedule() {
+	$("#td1").html("&nbsp;");
+	$("#td1").bind("click", choosePatient);
+	g_debug = 0;
 }
 
-function enrollPatient() {
-	window.location.href = "main?cmd=showEnrollFollowupPatient&stmId=1&ssmId=56&stmId=1";
+function showPatientQueryResult() {
+	$("#patientQueryResult").css("display", "block");
 }
+
+function hidePatientQueryResult() {
+	$("#patientQueryResult").css("display", "none");
+	$("#selectedPatient").text("患者" + $("#patientQueryResult").val());
+}
+
+function allowDrop(ev){
+    ev.preventDefault();
+}
+function drag(ev){
+    ev.dataTransfer.setData("Text",ev.target.innerHTML);
+}
+function drop(ev){
+    ev.preventDefault();
+    var data=ev.dataTransfer.getData("Text");
+    var str = '<span class="patientNameInScheduleTable" >'+data+'</span>&nbsp;<i class="fa fa-times" id="icon10"></i></span>';
+    ev.target.innerHTML =str;
+}
+
 </script>
                     
