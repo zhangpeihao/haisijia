@@ -133,61 +133,410 @@
 										</div>
 									</div>
 									<div class="box-body big">
-										<div class="alert alert-success">
-											<h4>患者信息</h4>
-											<p>床号：B035 姓名：张三 性别：男 年龄：50岁 身高：175cm 体重：66kg</p> <p></p>
-										</div>
-										<div class="row">										
-											<div class="col-md-2">
-												<div class="panel panel-default">
-													<div class="panel-body">
-														<div class="tabbable  tabs-below">
-															<input type="text" id="patientName" style="font-size: 5px; width: 80px;" placeholder="患者查询" />										
-															<select id="patientQueryResult" size="5" style="width: 80px; display: none;">
-																<option value="1">张三</option>
-																<option value="2">李四</option>
-																<option value="3">赵五</option>
-																<option value="4">李四</option>
-																<option value="5">赵五</option>
-																<option value="6">李四</option>
-																<option value="7">赵五</option>
-															</select>
-															<span id="selectedPatient" draggable="true" ondragstart="drag(event)">&nbsp;</span><br /><br />														
-															<ul class="nav nav-tabs">
-																<li class="active" style="font-size: 18px;"><a href="#" data-toggle="tab"><i class="fa fa-bullhorn"></i>A区</a></li>
-																<li><a href="#tab_2_2" data-toggle="tab">李东1</a></li>
-																<li><a href="#tab_2_3" data-toggle="tab">患002</a></li>
-																<li><a href="#tab_2_3" data-toggle="tab">患002</a></li>
-																<li><a href="#tab_2_3" data-toggle="tab">患002</a></li>
-																<li><a href="#tab_2_3" data-toggle="tab">患002</a></li>
-																<li><a href="#tab_2_3" data-toggle="tab">患002</a></li>
-																<li style="font-size: 18px;"><a href="#" data-toggle="tab"><i class="fa fa-bullhorn"></i>B区</a></li>
-																<li><a href="#tab_2_2" data-toggle="tab">李东1</a></li>
-																<li><a href="#tab_2_3" data-toggle="tab">患002</a></li>
-																<li><a href="#tab_2_3" data-toggle="tab">患002</a></li>
-																<li><a href="#tab_2_3" data-toggle="tab">患002</a></li>
-																<li><a href="#tab_2_3" data-toggle="tab">患002</a></li>
-																<li><a href="#tab_2_3" data-toggle="tab">患002</a></li>
-																<li style="font-size: 18px;"><a href="#" data-toggle="tab"><i class="fa fa-bullhorn"></i>C区</a></li>
-																<li><a href="#tab_2_2" data-toggle="tab">李东1</a></li>
-																<li><a href="#tab_2_3" data-toggle="tab">患002</a></li>
-																<li><a href="#tab_2_3" data-toggle="tab">患002</a></li>
-																<li><a href="#tab_2_3" data-toggle="tab">患002</a></li>
-																<li><a href="#tab_2_3" data-toggle="tab">患002</a></li>
-																<li><a href="#tab_2_3" data-toggle="tab">患002</a></li>
-															</ul>
-														</div>
-													</div>
-												</div>
-											</div>
-
-										  <div class="col-md-10">
+										<div class="row">	
+										  <div class="col-md-12">
 											 <div class="panel panel-default">
 												<div class="panel-body">
 													 <div class="tabbable">
+														<ul class="nav nav-tabs">
+														   <li class="active"><a href="#tab_1_1" data-toggle="tab"><i class="fa fa-home"></i> 医嘱</a></li>
+														   <li><a href="#tab_1_2" data-toggle="tab"><i class="fa fa-envelope"></i> 治疗单</a></li>
+														</ul>														
+														<div class="tab-content">
+												
+															<!-- 医嘱开始 -->
+														   <div class="tab-pane fade in active" style="overflow: auto;" id="tab_1_1">
+															  <div class="divide-10" style="text-align: right;"></div>
+															  <div style="text-align: right;">
+																医嘱状态：
+																<select size="1">
+																	<option value="1"><span style="background-color: red; color: white;">&nbsp;&nbsp;&nbsp;编写&nbsp;&nbsp;&nbsp;</span>&nbsp;&nbsp;</option>
+																	<option value="2"><span style="background-color: green; color: white;">&nbsp;&nbsp;&nbsp;修改&nbsp;&nbsp;&nbsp;</span>&nbsp;&nbsp;</option>
+																	<option value="3"><span style="background-color: blue; color: white;">&nbsp;&nbsp;&nbsp;调整&nbsp;&nbsp;&nbsp;</span>&nbsp;&nbsp;</option>
+																</select>
+																<button id="insertBefore" type="button" class="btn btn-primary">插入（前）</button>&nbsp;
+																<button id="insertAfter" type="button" class="btn btn-primary">追加（后）</button>&nbsp;
+																<button id="insertAfter" type="button" class="btn btn-primary">保存</button>&nbsp;
+																<button id="insertAfter" type="button" class="btn btn-primary">提交</button>&nbsp;
+																<button type="button" class="btn btn-primary">打印</button>&nbsp;
+															  </div>	  
+															  
+																<table id="daItemsTable" class="table table-bordered table-striped" style="table-layout:fixed; word-break: break-all; word-wrap: break-word;font-size: 5px; width: 2000px;">
+																	<thead>
+																		<tr>
+																			<th class="da_col_1">#</th>
+																			<th class="da_col_2">长临</th>
+																			<th class="da_col_3">类别</th>
+																			<th class="da_col_4">下达时间</th>
+																			<th class="da_col_5">医嘱内容</th>
+																			<th class="da_col_6">计价</th>
+																			<th class="da_col_7">剂量</th>
+																			<th class="da_col_8">单位</th>
+																			<th class="da_col_9">途径</th>
+																			<th class="da_col_10">频次</th>
+																			<th class="da_col_11">执行时间</th>
+																			<th class="da_col_12">阴阳</th>
+																			<th class="da_col_13">结束时间</th>
+																			<th class="da_col_14">医生说明</th>
+																			<th class="da_col_15">医生</th>
+																			<th class="da_col_16">次数</th>
+																			<th class="da_col_17">停止医生</th>
+																			<th class="da_col_18">停止核对护士</th>
+																			<th class="da_col_19">删除</th>
+																		</tr>
+																	</thead>
+																	<tbody>
+																	</tbody>
+																</table>
+																
+																<!-- 药品列表开始 -->
+																<table id="drugTable" class="table table-bordered table-striped" style="background-color: white; table-layout:fixed; word-break: break-all; word-wrap: break-word; font-size: 5px; width: 100%; display: none;">
+																	<thead>
+																		<tr>
+																			<th class="">#</th>
+																			<th class="">药品名称</th>
+																			<th class="">库存</th>
+																			<th class="">装单</th>
+																			<th class="">规格</th>
+																			<th class="">别名</th>
+																			<th class="">库房</th>
+																			<th class="">单次剂量</th>
+																			<th class="">单次剂量单位</th>
+																			<th class="">输入码</th>
+																			<th class="">药品代码</th>
+																		</tr>
+																	</thead>
+																	<tbody>
+																		<tr>
+																			<td class="">1</td>
+																			<td class=""><span id="drug_1">氨荼碱注射液</span></td>
+																			<td class="">10</td>
+																			<td class="">支</td>
+																			<td class="">0.5g:2ml 白云山明兴</td>
+																			<td class="">氨荼碱注射液</td>
+																			<td class="">一级库</td>
+																			<td class="">0.5</td>
+																			<td class="">g</td>
+																			<td class="">acjzsy</td>
+																			<td class="">0803001ZS0</td>
+																		</tr>
+																		<tr>
+																			<td class="">2</td>
+																			<td class="">氨荼碱注射液</td>
+																			<td class="">10</td>
+																			<td class="">支</td>
+																			<td class="">0.5g:2ml 白云山明兴</td>
+																			<td class="">氨荼碱注射液</td>
+																			<td class="">一级库</td>
+																			<td class="">0.5</td>
+																			<td class="">g</td>
+																			<td class="">acjzsy</td>
+																			<td class="">0803001ZS0</td>
+																		</tr>
+																		<tr>
+																			<td class="">3</td>
+																			<td class="">氨荼碱注射液</td>
+																			<td class="">10</td>
+																			<td class="">支</td>
+																			<td class="">0.5g:2ml 白云山明兴</td>
+																			<td class="">氨荼碱注射液</td>
+																			<td class="">一级库</td>
+																			<td class="">0.5</td>
+																			<td class="">g</td>
+																			<td class="">acjzsy</td>
+																			<td class="">0803001ZS0</td>
+																		</tr>
+																		<tr>
+																			<td class="">4</td>
+																			<td class="">氨荼碱注射液</td>
+																			<td class="">10</td>
+																			<td class="">支</td>
+																			<td class="">0.5g:2ml 白云山明兴</td>
+																			<td class="">氨荼碱注射液</td>
+																			<td class="">一级库</td>
+																			<td class="">0.5</td>
+																			<td class="">g</td>
+																			<td class="">acjzsy</td>
+																			<td class="">0803001ZS0</td>
+																		</tr>
+																		<tr>
+																			<td class="">5</td>
+																			<td class="">氨荼碱注射液</td>
+																			<td class="">10</td>
+																			<td class="">支</td>
+																			<td class="">0.5g:2ml 白云山明兴</td>
+																			<td class="">氨荼碱注射液</td>
+																			<td class="">一级库</td>
+																			<td class="">0.5</td>
+																			<td class="">g</td>
+																			<td class="">acjzsy</td>
+																			<td class="">0803001ZS0</td>
+																		</tr>
+																	</tbody>
+																</table>
+																<!-- 药品列表结束 -->
+																
+																<table id="materialTable" class="table table-bordered table-striped" style="background-color: white; table-layout:fixed; word-break: break-all; word-wrap: break-word; font-size: 5px; width: 100%; display: none;">
+																	<thead>
+																		<tr>
+																			<th class="">#</th>
+																			<th class="">代码</th>
+																			<th class="">名称</th>
+																			<th class="">拼音</th>
+																			<th class="">五笔</th>
+																			<th class="">类别</th>
+																			<th class="">扩展</th>
+																		</tr>
+																	</thead>
+																	<tbody>
+																		<tr>
+																			<td class="">1</td>
+																			<td class="">SS0038</td>
+																			<td class=""><span id="material_1">半永久中心静脉导管拨管术</span></td>
+																			<td class="">BYJZXJMDGBGS</td>
+																			<td class="">UFJSKSISK</td>
+																			<td class="">F</td>
+																			<td class="">&nbps;</td>
+																		</tr>
+																		<tr>
+																			<td class="">2</td>
+																			<td class="">SS0038</td>
+																			<td class=""><span id="material_2">半永久中心静脉导管拨管术</span></td>
+																			<td class="">BYJZXJMDGBGS</td>
+																			<td class="">UFJSKSISK</td>
+																			<td class="">F</td>
+																			<td class="">&nbps;</td>
+																		</tr>
+																		<tr>
+																			<td class="">3</td>
+																			<td class="">SS0038</td>
+																			<td class=""><span id="m_3">半永久中心静脉导管拨管术</span></td>
+																			<td class="">BYJZXJMDGBGS</td>
+																			<td class="">UFJSKSISK</td>
+																			<td class="">F</td>
+																			<td class="">&nbps;</td>
+																		</tr>
+																		<tr>
+																			<td class="">4</td>
+																			<td class="">SS0038</td>
+																			<td class=""><span id="m_4">半永久中心静脉导管拨管术</span></td>
+																			<td class="">BYJZXJMDGBGS</td>
+																			<td class="">UFJSKSISK</td>
+																			<td class="">F</td>
+																			<td class="">&nbps;</td>
+																		</tr>
+																		<tr>
+																			<td class="">5</td>
+																			<td class="">SS0038</td>
+																			<td class=""><span id="m_5">半永久中心静脉导管拨管术</span></td>
+																			<td class="">BYJZXJMDGBGS</td>
+																			<td class="">UFJSKSISK</td>
+																			<td class="">F</td>
+																			<td class="">&nbps;</td>
+																		</tr>
+																	</tbody>
+																</table>
+																
+																
+															  <p></p>
+														   </div>
+														   <!-- 医嘱结束 -->
+														   
+														   
+
 															<!-- 治疗单开始 -->
-															<div class="tab-content" id="tab_1_2">
+															<div class="tab-pane fade" id="tab_1_2">
 																<div class="divide-10"></div>
+																<form class="form-horizontal " action="#">
+																	<div class="form-group">
+																		<label class="col-md-2 control-label">病案号*</label>
+																		<div class="col-md-4">
+																			<input class="form-control" type="text" name="residentHospitalCode" size="10" id="residentHospitalCode">
+																		</div>
+																		<label class="col-md-2 control-label">姓名*</label>
+																		<div class="col-md-4">
+																			<input class="form-control" type="text" name="residentHospitalCode" size="10" id="residentHospitalCode">
+																		</div>
+																	</div>		
+																	<div class="form-group">
+																		<label class="col-md-2 control-label">透析日期*</label>
+																		<div class="col-md-4">
+																			<input  class="form-control datepicker" type="text" name="txDate" id="txDate" size="10">
+																		</div>
+																		<label class="col-md-2 control-label">透析总次数</label>
+																		<div class="col-md-4">
+																			<input class="form-control" type="text" name="residentHospitalCode" size="10" id="residentHospitalCode">
+																		</div>
+																	</div>		
+																	<div class="form-group">
+																		<label class="col-md-12 control-label" style="text-align: left; font-size: 18px;">治疗方案</label>
+																	</div>
+																	<div class="form-group">
+																		<label class="col-md-2 control-label">治疗模式</label>
+																		<div class="col-md-4">
+																			<select id="cureMode" class="form-control">
+																				<option value="1">HD</option>
+																				<option value="1">HDF</option>
+																				<option value="1">HF</option>
+																				<option value="1">UF</option>
+																				<option value="1">HP</option>
+																				<option value="1">DH+HP</option>
+																			</select>
+																		</div>
+																		<label class="col-md-2 control-label">置换液量</label>
+																		<div class="col-md-4">
+																			<input type="text" name="zhyl" size="10" id="zhyl" style="width: 90%;">升
+																		</div>
+																	</div>	
+																	<div class="form-group">
+																		<label class="col-md-2 control-label">透析（滤）器</label>
+																		<div class="col-md-4">
+																			<select id="txlq" class="form-control">
+																				<option value="1">14L</option>
+																				<option value="1">FX60</option>
+																				<option value="1">HDF</option>
+																				<option value="1">UP</option>
+																				<option value="1">CA150</option>
+																				<option value="1">F6HPS</option>
+																			</select>
+																		</div>
+																		<label class="col-md-2 control-label">置换液量</label>
+																		<div class="col-md-4">
+																			<input type="text" name="zhyl" size="10" id="zhyl" style="width: 90%;">升
+																		</div>
+																	</div>
+																	<div class="form-group">
+																		<label class="col-md-2 control-label">透析液成份-钠</label>
+																		<div class="col-md-4">
+																			<input type="text" name="zhyl" size="10" id="zhyl" style="width: 80%;">mmol/L
+																		</div>
+																		<label class="col-md-2 control-label">透析液成份-钙</label>
+																		<div class="col-md-4">
+																			<input type="text" name="zhyl" size="10" id="zhyl" style="width: 80%;">mmol/L
+																		</div>
+																	</div>
+																	<div class="form-group">
+																		<label class="col-md-2 control-label">透析液成份-碳酸氢根</label>
+																		<div class="col-md-4">
+																			<input type="text" name="zhyl" size="10" id="zhyl" style="width: 80%;">mmol/L
+																		</div>
+																		<label class="col-md-2 control-label">流量</label>
+																		<div class="col-md-4">
+																			<input type="text" name="zhyl" size="10" id="zhyl" style="width: 80%;">ml/min
+																		</div>
+																	</div>
+																	<div class="form-group">
+																		<label class="col-md-2 control-label">血管通路</label>
+																		<div class="col-md-4">
+																			<input type="radio" class="uniform" value="">自体AV内痿&nbsp;
+																			<input type="radio" class="uniform" value="">临时管&nbsp;
+																			<input type="radio" class="uniform" value="">半永久管&nbsp;
+																			<input type="radio" class="uniform" value="">人造血管&nbsp;
+																		</div>
+																		<label class="col-md-2 control-label">治疗时间</label>
+																		<div class="col-md-4">
+																			<input type="text" name="zhyl" size="10" id="zhyl" style="width: 80%;">h
+																		</div>
+																	</div>
+																	<div class="form-group">
+																		<label class="col-md-2 control-label">UFR URF1</label>
+																		<div class="col-md-4">
+																			<input type="text" name="zhyl" size="10" id="zhyl" style="width: 80%;">L/h
+																		</div>
+																		<label class="col-md-2 control-label">&nbsp;</label>
+																		<div class="col-md-4">
+																			&nbsp;
+																		</div>
+																	</div>
+																			
+																	<div class="form-group">
+																		<label class="col-md-12 control-label" style="text-align: left; font-size: 18px;">抗凝方案</label>
+																	</div>
+																	<div class="form-group">
+																		<label class="col-md-2 control-label">选择肝素</label>
+																		<div class="col-md-4">
+																			<select id="xzgs" class="form-control">
+																				<option value="1">肝素</option>
+																				<option value="1">低分子肝素</option>
+																				<option value="1">肝素和低分子肝素</option>
+																				<option value="1">无肝素</option>
+																			</select>
+																		</div>
+																		<label class="col-md-2 control-label">首剂</label>
+																		<div class="col-md-4">
+																			<input type="text" name="zhyl" size="10" id="zhyl" style="width: 80%;">IU
+																		</div>
+																	</div>
+																	<div class="form-group">
+																		<label class="col-md-2 control-label">维持</label>
+																		<div class="col-md-4">
+																			<input type="text" name="zhyl" size="10" id="zhyl" style="width: 80%;">IU
+																		</div>
+																		<label class="col-md-2 control-label">追加</label>
+																		<div class="col-md-4">
+																			<input type="text" name="zhyl" size="10" id="zhyl" style="width: 80%;">IU
+																		</div>
+																	</div>
+																	<div class="form-group">
+																		<label class="col-md-2 control-label">总量</label>
+																		<div class="col-md-4">
+																			<input type="text" name="zhyl" size="10" id="zhyl" style="width: 80%;">IU
+																		</div>
+																		<label class="col-md-2 control-label">血流量</label>
+																		<div class="col-md-4">
+																			<input type="text" name="zhyl" size="10" id="zhyl" style="width: 80%;">ml/min
+																		</div>
+																	</div>
+																	
+																	
+																	<div class="form-group">
+																		<label class="col-md-12 control-label" style="text-align: left; font-size: 18px;">基本检查</label>
+																	</div>
+																	<div class="form-group">
+																		<label class="col-md-2 control-label">干体重</label>
+																		<div class="col-md-4">
+																			<input type="text" name="zhyl" size="10" id="zhyl" style="width: 80%;">kg
+																		</div>
+																		<label class="col-md-2 control-label">透析前体重</label>
+																		<div class="col-md-4">
+																			<input type="text" name="zhyl" size="10" id="zhyl" style="width: 80%;">kg
+																		</div>
+																	</div>
+																	<div class="form-group">
+																		<label class="col-md-2 control-label">体重增加</label>
+																		<div class="col-md-4">
+																			<input type="text" name="zhyl" size="10" id="zhyl" style="width: 80%;">kg
+																		</div>
+																		<label class="col-md-2 control-label">超滤总量</label>
+																		<div class="col-md-4">
+																			<input type="text" name="zhyl" size="10" id="zhyl" style="width: 80%;">kg
+																		</div>
+																	</div>
+																	<div class="form-group">
+																		<label class="col-md-2 control-label">T</label>
+																		<div class="col-md-4">
+																			<input type="text" name="zhyl" size="10" id="zhyl" style="width: 80%;">℃
+																		</div>
+																		<label class="col-md-2 control-label">P</label>
+																		<div class="col-md-4">
+																			<input type="text" name="zhyl" size="10" id="zhyl" style="width: 80%;">次/min
+																		</div>
+																	</div>
+																	<div class="form-group">
+																		<label class="col-md-2 control-label">R</label>
+																		<div class="col-md-4">
+																			<input type="text" name="zhyl" size="10" id="zhyl" style="width: 80%;">次/min
+																		</div>
+																		<label class="col-md-2 control-label">BP</label>
+																		<div class="col-md-4">
+																			<input type="text" name="zhyl" size="10" id="zhyl" style="width: 30%;">/
+																			<input type="text" name="zhyl" size="10" id="zhyl" style="width: 30%;">mmHg
+																		</div>
+																	</div>
+																	<div class="form-group">
+																		<label class="col-md-12 control-label" style="text-align: left; font-size: 18px;">治疗检查记录</label>
+																	</div>
+																</form>
 																<table id="cureRecord" class="table table-bordered table-striped" style="table-layout:fixed; word-break: break-all; word-wrap: break-word; font-size: 5px; width: 100%;">
 																	<thead>
 																		<tr>
@@ -217,7 +566,7 @@
 																			<td><input type="text" class="" style="width: 100%;" /></td>
 																			<td><input type="text" class="" style="width: 100%;" /></td>
 																			<td>
-																				<select size="1" style="width: 100%; font-size: 12px;" >
+																				<select size="1" style="width: 100%;" >
 																					<option value="1">未知</option>
 																					<option value="1">张三</option>
 																					<option value="1">李四</option>
@@ -237,7 +586,7 @@
 																			<td><input type="text" class="" style="width: 100%;" /></td>
 																			<td><input type="text" class="" style="width: 100%;" /></td>
 																			<td>
-																				<select size="1" style="width: 100%; font-size: 12px;" >
+																				<select size="1" style="width: 100%;" >
 																					<option value="1">未知</option>
 																					<option value="1">张三</option>
 																					<option value="1">李四</option>
@@ -257,7 +606,7 @@
 																			<td><input type="text" class="" style="width: 100%;" /></td>
 																			<td><input type="text" class="" style="width: 100%;" /></td>
 																			<td>
-																				<select size="1" style="width: 100%; font-size: 12px;" >
+																				<select size="1" style="width: 100%;" >
 																					<option value="1">未知</option>
 																					<option value="1">张三</option>
 																					<option value="1">李四</option>
@@ -277,7 +626,7 @@
 																			<td><input type="text" class="" style="width: 100%;" /></td>
 																			<td><input type="text" class="" style="width: 100%;" /></td>
 																			<td>
-																				<select size="1" style="width: 100%; font-size: 12px;" >
+																				<select size="1" style="width: 100%;" >
 																					<option value="1">未知</option>
 																					<option value="1">张三</option>
 																					<option value="1">李四</option>
@@ -394,9 +743,14 @@
 																		</div>
 																	</div>
 																</form>
-															
 															</div>
 															<!-- 治疗单结束 -->
+														   
+														   
+														   
+														   
+														   
+														</div>
 													 </div>
 												 </div>
 											 </div>
@@ -422,6 +776,18 @@ $(document).ready(function () {
 	$("#pd_1").bind("click", deletePatient);
 	$("#rd_1").bind("click", enrollPatient);
 	$("#addFollowupPatientBtn").bind("click", showAddFollowupPatient);
+	// 绑定添加行
+	$("#insertBefore").bind("click", insertBefore);
+	$("#insertAfter").bind("click", insertAfter);
+	$("#daItemsTable tr").bind("click", selectRow);
+	// 处理查询情况
+	$("#drug_1").bind("click", hideDrugTable);
+	$("#material_1").bind("click", hideMaterialTable);
+	insertAfter();
+	insertAfter();
+	insertAfter();
+	insertAfter();
+	insertAfter();
 	$("#patientName").bind("focus", showPatientQueryResult);
 	//$("#patientName").bind("blur", hidePatientQueryResult);
 	$("#patientQueryResult").bind("click", hidePatientQueryResult);
