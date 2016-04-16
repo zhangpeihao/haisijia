@@ -50,7 +50,7 @@
 								<tr>
 									<th>#</th>
 									<th>收款员</th>
-									<th>编号</th>
+									<th>时间</th>
 									<th>发票号</th>
 									<th>病人ID</th>
 									<th>姓名</th>
@@ -72,7 +72,7 @@
 											<option value="2">钱二</option>
 										</select>
 									</td>
-									<td>001</td>
+									<td>09:00</td>
 									<td>F001</td>
 									<td>1135</td>
 									<td>张三</td>
@@ -107,10 +107,10 @@
 											<option value="2">钱二</option>
 										</select>
 									</td>
-									<td>001</td>
-									<td>F001</td>
-									<td>1135</td>
-									<td>张三</td>
+									<td>09:23</td>
+									<td>F002</td>
+									<td>1150</td>
+									<td>郑三</td>
 									<td>10000</td>
 									<td>
 										<select size="1">
@@ -142,10 +142,10 @@
 											<option value="2">钱二</option>
 										</select>
 									</td>
-									<td>001</td>
-									<td>F001</td>
-									<td>1135</td>
-									<td>张三</td>
+									<td>10:00</td>
+									<td>F003</td>
+									<td>1160</td>
+									<td>李二</td>
 									<td>10000</td>
 									<td>
 										<select size="1">
@@ -177,10 +177,10 @@
 											<option value="2">钱二</option>
 										</select>
 									</td>
-									<td>001</td>
-									<td>F001</td>
-									<td>1135</td>
-									<td>张三</td>
+									<td>12:00</td>
+									<td>F004</td>
+									<td>1170</td>
+									<td>王一</td>
 									<td>10000</td>
 									<td>
 										<select size="1">
@@ -212,10 +212,10 @@
 											<option value="2">钱二</option>
 										</select>
 									</td>
-									<td>001</td>
-									<td>F001</td>
-									<td>1135</td>
-									<td>张三</td>
+									<td>17:00</td>
+									<td>F005</td>
+									<td>1180</td>
+									<td>周五</td>
 									<td>10000</td>
 									<td>
 										<select size="1">
