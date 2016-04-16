@@ -40,7 +40,6 @@
 									<th>住院号</th>
 									<th>押金额</th>
 									<th style="text-align: center;">收退款</th>
-									<th style="text-align: center;">结算</th>
 								</tr>
 							</thead>
 							<tbody>
@@ -56,11 +55,6 @@
 											<i class="fa fa-cny"></i>
 										</a>
 									</td>
-									<td style="text-align: center;">
-										<a id="pd_01" href="javascript:;" class="remove">
-											<i class="fa fa-credit-card"></i>
-										</a>
-									</td>
 								</tr>	
 								<tr>
 									<td>2</td>
@@ -72,11 +66,6 @@
 									<td style="text-align: center;">
 										<a id="p_1" href="javascript:;" class="remove">
 											<i class="fa fa-cny"></i>
-										</a>
-									</td>
-									<td style="text-align: center;">
-										<a id="pd_1" href="javascript:;" class="remove">
-											<i class="fa fa-credit-card"></i>
 										</a>
 									</td>
 								</tr>	
@@ -92,11 +81,6 @@
 											<i class="fa fa-cny"></i>
 										</a>
 									</td>
-									<td style="text-align: center;">
-										<a id="pd_1" href="javascript:;" class="remove">
-											<i class="fa fa-credit-card"></i>
-										</a>
-									</td>
 								</tr>	
 								<tr>
 									<td>4</td>
@@ -110,11 +94,6 @@
 											<i class="fa fa-cny"></i>
 										</a>
 									</td>
-									<td style="text-align: center;">
-										<a id="pd_1" href="javascript:;" class="remove">
-											<i class="fa fa-credit-card"></i>
-										</a>
-									</td>
 								</tr>	
 								<tr>
 									<td>5</td>
@@ -126,11 +105,6 @@
 									<td style="text-align: center;">
 										<a id="p_1" href="javascript:;" class="remove">
 											<i class="fa fa-cny"></i>
-										</a>
-									</td>
-									<td style="text-align: center;">
-										<a id="pd_1" href="javascript:;" class="remove">
-											<i class="fa fa-credit-card"></i>
 										</a>
 									</td>
 								</tr>	
